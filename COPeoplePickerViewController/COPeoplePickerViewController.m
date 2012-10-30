@@ -173,14 +173,15 @@ COSynth(shadowLayer)
 
 - (void)loadView {
   [super loadView];
-  UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Done", nil)
+  UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Send", nil)
                                                                 style:UIBarButtonItemStyleDone
                                                                target:self
                                                                action:@selector(done:)];
   self.navigationItem.rightBarButtonItem = rightItem;
 }
 
-- (void)viewDidLoad {  
+- (void)viewDidLoad {
+    [super viewDidLoad];
   // Configure content view
   self.view.backgroundColor = [UIColor colorWithRed:0.859 green:0.886 blue:0.925 alpha:1.0];
   
@@ -236,6 +237,7 @@ COSynth(shadowLayer)
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
   [self.tokenField.textField becomeFirstResponder];
 }
 
@@ -507,6 +509,13 @@ static NSString *kCOTokenFieldDetectorString = @"\u200B";
   CGFloat maxLeft = CGRectGetWidth(self.bounds) - kTokenFieldPaddingX;
   CGFloat rowHeight = self.computedRowHeight;
   
+  UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(kTokenFieldPaddingX, rowHeight/2, 32.0, 14.0)];
+  label.text = @"To:  ";
+  [label setFont:[UIFont systemFontOfSize:kTokenFieldFontSize]];
+  label.textColor = [UIColor grayColor];
+  [self addSubview:label];
+  left = left + label.frame.origin.x + label.frame.size.width;
+    
   for (NSInteger i=0; i<tokenCount; i++) {
     COToken *token = [self.tokens objectAtIndex:i];
     CGFloat right = left + CGRectGetWidth(token.bounds);
