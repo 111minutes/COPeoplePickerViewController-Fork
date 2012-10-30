@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CAB9060E163FEE350044AB8A /* COPeoplePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9060D163FEE350044AB8A /* COPeoplePickerViewController.m */; };
+		CAB3D9101640136D00EFA7ED /* COPeoplePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB3D90F1640136D00EFA7ED /* COPeoplePickerViewController.m */; };
 		DC3CFB461440C73200B11E92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3CFB451440C73200B11E92 /* UIKit.framework */; };
 		DC3CFB481440C73200B11E92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3CFB471440C73200B11E92 /* Foundation.framework */; };
 		DC3CFB4A1440C73200B11E92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3CFB491440C73200B11E92 /* CoreGraphics.framework */; };
@@ -20,8 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CAB9060C163FEE350044AB8A /* COPeoplePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COPeoplePickerViewController.h; sourceTree = "<group>"; };
-		CAB9060D163FEE350044AB8A /* COPeoplePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COPeoplePickerViewController.m; sourceTree = "<group>"; };
+		CAB3D90E1640136D00EFA7ED /* COPeoplePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COPeoplePickerViewController.h; sourceTree = "<group>"; };
+		CAB3D90F1640136D00EFA7ED /* COPeoplePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COPeoplePickerViewController.m; sourceTree = "<group>"; };
 		DC3CFB411440C73200B11E92 /* COPeoplePickerViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COPeoplePickerViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3CFB451440C73200B11E92 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DC3CFB471440C73200B11E92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,8 +57,8 @@
 		CAB9060B163FEE350044AB8A /* COPeoplePickerViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CAB9060C163FEE350044AB8A /* COPeoplePickerViewController.h */,
-				CAB9060D163FEE350044AB8A /* COPeoplePickerViewController.m */,
+				CAB3D90E1640136D00EFA7ED /* COPeoplePickerViewController.h */,
+				CAB3D90F1640136D00EFA7ED /* COPeoplePickerViewController.m */,
 			);
 			path = COPeoplePickerViewController;
 			sourceTree = "<group>";
@@ -179,7 +179,7 @@
 			files = (
 				DC3CFB521440C73200B11E92 /* main.m in Sources */,
 				DC3CFB561440C73200B11E92 /* COAppDelegate.m in Sources */,
-				CAB9060E163FEE350044AB8A /* COPeoplePickerViewController.m in Sources */,
+				CAB3D9101640136D00EFA7ED /* COPeoplePickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
