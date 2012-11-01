@@ -13,7 +13,7 @@
 @protocol COPeoplePickerViewControllerDelegate;
 
 @interface COPeoplePickerViewController : UIViewController
-@property (nonatomic, weak) id<COPeoplePickerViewControllerDelegate> delegate;
+@property (nonatomic, assign) id<COPeoplePickerViewControllerDelegate> delegate;
 
 /*!
  @property

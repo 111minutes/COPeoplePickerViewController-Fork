@@ -58,7 +58,7 @@
 #define kTokenFieldShadowHeight 14.0
 
 @interface COTokenField : UIView <UITextFieldDelegate>
-@property (nonatomic, weak) id<COTokenFieldDelegate> tokenFieldDelegate;
+@property (nonatomic, assign) id<COTokenFieldDelegate> tokenFieldDelegate;
 @property (nonatomic, strong) UITextField *textField;
 @property (nonatomic, strong) UIButton *addContactButton;
 @property (nonatomic, strong) NSMutableArray *tokens;
